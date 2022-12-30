@@ -1,0 +1,66 @@
+ /*RULESET*/
+/*A selector followed by a declaration block for styling elements matching the selector with the declarations in the declaration block*/
+selector {
+    property: value;
+}
+
+h1{
+    text-align: center;
+    color: darkblue;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+p {
+    background-color:darkblue;
+    color: white;
+    min-height: 100px;
+    font-size: size 1.25rem;
+    width:30%;
+}
+ 
+ 
+ /*SELECTOR - A pattern used at the beginning of a ruleset for choosing which elements will be ffected by the declarations*/
+ /*Type selector - selects all of the elements of a specific HTML tag; e.g h1 would select all h1 elements*/
+ h1, h2, p {
+    color: red;
+ }
+
+/*Universal selector - selects all of the elements. Usually prefixed with an asterisk*/
+ * {
+    color: blue;
+ }
+
+ /*Class selector - selects all of the elements with a specific HTML class attribute. Are prefixed with a dot*/
+ .red { 
+    color: red;
+}
+
+ /*ID selector - selects an element with a specific HTML ID attribute. Prefixed with # e.g., label tags use ID attribute.*/
+#bar {
+    color:blue;
+}
+
+/*Attribute selector - selects all elements with a specific HTML attribute set to a specific value.*/
+a[href="https://algoexpert.io"] {
+color:green;
+} 
+/*Selects all types of elements with href attribute with text "https://algoexpert.io" at the beginning*/
+[href^="https://algoexpert.io"] {
+color:red;
+}
+/*Selects all elements with href attribute with the text "algoexpert.io" at the end of the value.*/
+[href$="algoexpert.io"] {
+    color:blue;
+}
+/*Selects all elements with an href attribute with the text "algoexpert.io' at any location*/
+[href*="algoexpert.io"] {
+    color:yellow
+}
+
+
+/* COMBINATOR - combines multiple selectos to select elements based on their location in the DOM
+Desendant combinator; represented by a single space in the format selector1 selector2
+Child combinator; represented by > in the format selector1 > selector2
+Sibling combinator; represented by ~, in the format selector1 ~ selector2
+Adjacent sibling combinator; represented by +, in the format selector1 + selector2*/
