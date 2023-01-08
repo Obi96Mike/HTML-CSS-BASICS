@@ -68,8 +68,4 @@ color:red;
     color:yellow
 }
 
-/* COMBINATOR - combines multiple selectos to select elements based on their location in the DOM
-Desendant combinator; represented by a single space in the format selector1 selector2
-Child combinator; represented by > in the format selector1 > selector2
-Sibling combinator; represented by ~, in the format selector1 ~ selector2
-Adjacent sibling combinator; represented by +, in the format selector1 + selector2*/
+
