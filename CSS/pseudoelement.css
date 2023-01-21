@@ -1,0 +1,3 @@
+/* Used for styling a specific portion of the element like forst letter or first line of a paragraph. 
+They start with ::
+e.g., p::first-letter would select the first letter of paragraphs

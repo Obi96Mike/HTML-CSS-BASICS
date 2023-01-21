@@ -9,9 +9,44 @@ Not as performant/ fast as basic selectors.
 
 Descendant combinator; represented by a single space in the format selector1 selector2; e.g footer p, select paragraph inside the footer
 Child combinator; represented by > in the format selector1 > selector2 
-Sibling combinator; represented by ~, in the format selector1 ~ selector2; e.g., h2 ~ p, select a paragraph that is a sibling to h2
-Adjacent sibling combinator; represented by +, in the format selector1 + selector2*/
+Sibling combinator; represented by ~, in the format selector1 ~ selector2; e.g., h2 ~ p, select a paragraph that is a sibling to h2; any elements that share the same parent
+Adjacent sibling combinator; represented by +, in the format selector1 + selector2; siblings directly next to eaxh other*/
 
-#product p {
+
+footer p {
+    color:red
+}
+
+footer > p {
+    color:green
+}
+
+h2 ~ p {
+    color:red
+}
+
+h2 + p {
+    color:green
+}
+
+
+/*Descendant selector; any paragraph elements inside products section*/
+#products p {
     color: orange
 }
+
+/* Child selector; selects paragraph that is a direct child of products section; only first paragraph is orange*/
+#products > p{
+    color:blue
+}
+
+/*Sibling selector; styling all elements that come after the products section*/
+#products ~ p{
+    color:orange
+}
+
+/* Adjacent Sibling selector; selects paragraph element that is a direct sibling of section element, it comes immediately after the products section.*/
+#products + p{
+    color:orange
+}
+
