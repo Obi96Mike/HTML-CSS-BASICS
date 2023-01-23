@@ -1,0 +1,31 @@
+/* Used for styling a specific portion or part of the element like first letter or first line of a paragraph. 
+They start with ::
+e.g., p::first-letter would select the first letter of paragraphs
+
+.first-letter {
+    font-size: 140%;
+    font-weight: bold;
+}*/
+
+p::first-letter {
+    font-size: 140%;
+    font-weight: bold;
+}
+
+p::first-line {
+    font-size: 140%;
+    font-weight: bold;
+}
+
+/* Used to change selection color */
+::selection {
+    background-color: pink;
+}
+
+/*Used for inserting content before the content of an element. e.g., inserting something before content of every paragraph on our page.
+Block-level element starts on a new line and takes up entire available space. */
+p::before {
+    content: '...';
+    display: block;
+}
+

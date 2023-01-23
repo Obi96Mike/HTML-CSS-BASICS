@@ -1,8 +1,8 @@
  /*RULESET*/
-/*A selector followed by a declaration block for styling elements matching the selector with the declarations in the declaration block*/
+/*A selector followed by a declaration block for styling elements matching the selector with the declarations in the declaration block
 selector {
     property: value;
-}
+}*/
 
 h1{
     text-align: center;

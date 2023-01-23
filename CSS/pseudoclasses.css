@@ -1,4 +1,5 @@
-/* A way for selecting classes based on the current state of the element in the DOM. They start with : 
+/* To style elements in a particular state e.g., hovered anchor. 
+A way for selecting classes based on the current state of the element in the DOM. They start with : 
 e.g., button:hover would select buttons currently hovered over.*/
 
 /*first-child selector is fragile; If you add or remove elements around, our CSS rules may break*/
@@ -39,4 +40,34 @@ a:visited, a:link {
 /*Pseudoclass applied when user hovers over an element, Best practice is to use hover pseudoselector together with focus pseudoselector for users using Tab key on keyboard*/
 a:hover, a:focus {
    color:deeppink 
+}
+
+
+/*PSEUDOCLASSES*/
+p:first-child{
+    color:plum;
+}
+
+p:first-of-type {
+    color:orange;
+}
+
+p:nth-of-type(2n-1) {
+    color:deeppink;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+input:focus {
+    outline: 2px solid blue;
+}
+
+input:invalid:not(:focus) {
+    outline: 2px solid red;
 }

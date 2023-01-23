@@ -1,0 +1,35 @@
+<!--unsplash.com, sketch.com, pexels.com to download images and videos
+  caniuse.com to check whoch v=browsers support various HTML and CSS features.-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMAGES</title>
+    <style>
+      img {
+        width: 200 px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      video {
+        /*Browser automatically calculates height based on the aspect ratio of the video*/
+        width: 400 px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!--img tag is an empty tag with 2 primary attributes
+      src: The path to the image, either relative or absolute
+      alt: Alternative text to be used with screen readers for visually impaired people or any time the image cannot be displayed.
+      Embedding images at different devices depending on device.-->
+    <img src="/images/obimike.png" alt="Obi Mike picture" />
+    <video controls autoplay loop src="/videos/ocean.mp4">
+      Your browser doesn't support videos.
+    </video>
+    <audio src=""></audio>
+  </body>
+</html>

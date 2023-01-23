@@ -1,1 +1,84 @@
 <!--Unordered, ordered and description lists-->
+
+<!--UNORDERED LISTS
+  Used where order does not matter. By default, most browser will show this as a bulleted list.
+  Implementing navigation menus, producsts in a shopping cart, images.
+  Nest lists to create a hierarchy.
+
+  ORDERED LISTS used for a lis where the order matters. By default, most browsers will show this as a numbered list.
+  Ordered list should contain any number of <li> tags.
+
+    LIST item tag, used for individual elements in both unordered and ordered lists.
+    List items can also contain other lists to create nested lists.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LISTS</title>
+
+    <style>
+      ul {
+        list-style-type: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul>
+      <li>About Me</li>
+      <li>
+        Courses
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </li>
+      <li>Subscribe</li>
+      <li>Contact me</li>
+    </ul>
+
+    <!--ol>li*3-->
+    <ol>
+      <li>Preheat the oven.</li>
+      <li>Place the ingredients on the crust.</li>
+      <li>Put the pizza in the oven for 20 minutes.</li>
+    </ol>
+
+    <ol>
+      <li>Step 1</li>
+      <li>
+        Step 2:
+        <ol>
+          <li>Substep 1:</li>
+          <li>Substep 2:</li>
+        </ol>
+      </li>
+      <li>Step 3</li>
+    </ol>
+
+    <!--DESCRIPTION LISTS for implementing glossaries or display metadata, description term, description details-->
+    <dl>
+      <dt>HTML</dt>
+      <dd>Hypertext Markup Language</dd>
+      <dt>CSS</dt>
+      <dd>Cascading Stylesheets</dd>
+    </dl>
+
+    <dl>
+      <dt>Title</dt>
+      <dd>The Ultimate HTML and CSS Course</dd>
+      <dt>Author</dt>
+      <dd>Obi Mike</dd>
+      <dt>Skills</dt>
+      <dd>HTML</dd>
+      <dd>CSS</dd>
+      <dd>Responsive Design</dd>
+      <dd>Search Engine Optimization</dd>
+    </dl>
+  </body>
+</html>
