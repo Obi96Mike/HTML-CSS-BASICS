@@ -1,16 +1,124 @@
-<!--SEMANTIC HTML CSS-->
+<!--Generic/ General purpose containers - div and span elements used for styling purposes.
+    Block-level elements start on a new line and fill up the entire available horizontal space, but you can use CSS to change its width
+    vs Inline elements e.g., span element for styling texts, not going to take up entire width of the page. -->
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CONTAINERS</title>
+        <style>
+          .product {
+            background-color: gold;
+            width: 300px;
+          }
+          .highlight {
+            background-color: yellow;
+          }
+          .one{
+            background-color:yellow;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="product">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <a href="#">Link</a>
+        </div>
+        <!--Ctrl + D to select multiple divs-->
+        <p><div class="highlight">Lorem </div> ipsum dolor sit amet consectetur, adipisicing elit. Beatae, iste.</p>
+        <p><span class="one">Lorem </span> ipsum dolor sit amet consectetur adipisicing elit. A, officia.</p>
+        <p><mark>Lorem </mark> ipsum, dolor sit amet consectetur adipisicing elit. Expedita, officia!.</p>
+      </body>
+    </html>
+
+
+<!--SEMANTIC HTML are container elements that are more descriptive/ meaningful 
+    helping search engines better understand our pages and what they contain.-->
 
 <header></header>
-<!--Introductory content-->
+<!--Introductory content which can belong to page, section or article-->
+
 <article></article>
-<!--Self-contained, independently distributable content-->
+<!--Self-contained, independently distributable content e.g., forum posts, user-submitted comments, reviews, product cards-->
+
 <section></section>
-<!---Thematic groupings of content, not self-contained-->
+<!---Thematic groupings of content, not self-contained; to group related content-->
+
+<!--A figure element is a container for figures, it does not have any visual characteristics.
+    figcaption element, optional, can be above or below the image-->
+<figure><figcaption></figcaption></figure>
+<article>
+    <h1>Heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Eligendi, laudantium eaque. 
+    Architecto, aperiam! Excepturi at, dolorum ipsum laboriosam, 
+    maxime veritatis alias veniam quia illum vitae temporibus omnis! 
+    Explicabo, assumenda laborum?</p>
+    <figure>
+        <img src="" alt="">
+        <figcaption>My coffee this morning</figcaption>
+    </figure>
+</article>
+
+<mark></mark> <!--for highlighting elements instead of using class or ID-->
+
+<time></time>
+<p>Published <time datetime="2021-01-01 17:00">January 1 2021 05:00pm</time></p>
+
 <main></main>
-<!--Main content, limited to one per page-->
+<!--Main content, limited to one per page; every page can only have only 1 main element-->
+
 <nav></nav>
 <!--Asection of links, oftentimes the primary navia=gation of the page-->
+
 <aside></aside>
 <!--Non-vital content indirectly related to the main content. The page would make sense without this content-->
+
 <footer></footer>
 <!--Footer of the document, oftentimes containing copyright information-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRUCTURE</title>
+</head>
+<body>
+   <header>
+    <nav>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
+   </header> 
+   <main>
+    <section>
+        <h2>Products</h2>
+        <article></article>
+        <article></article>
+    </section>
+    <section>
+        <h2>Testimonials</h2>
+        <article>
+            <sections></sections>
+            <sections></sections>
+            <sections></sections>
+        </article>
+        <article></article>
+    </section> 
+   </main>
+   <aside></aside>
+   <footer>
+    <nav>
+        <ul></ul>
+    </nav>
+</footer>
+</body>
+</html>
