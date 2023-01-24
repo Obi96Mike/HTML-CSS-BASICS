@@ -1,0 +1,46 @@
+
+/*We can have many h1 elements but not all h1 elements may have a class of highlight.
+Thus class selector is more specific
+Incase of 2 selectors with equal specificity, the rule that comes last will be applied.
+
+If you hover a mouse over a selector, you can see its weight/ specificity e.g (0, 1, 0).
+The first number in the left represents the number of ID selectors.
+The middle number represents the number of class/ attribute selectors.
+The number on the right represents the number of element selectors.
+
+If you want to override the specificity of ID selectors, you can use ! important keyword in the element selector.
+However, it should be avoided because it's considered a bad practice; because it makes CSS messy and hard to maintain.*/
+
+h1 {
+    color:dodgerblue !important; 
+}
+
+h1 {
+    color:dodgerblue;
+}
+
+.highlight {
+    color:deeppink;
+}
+
+#products {
+    color:green;
+}
+
+#products {
+    color:brown;
+}
+
+
+/*Instead of important keyword, write a rule that is more specific  */
+.highlight#products {
+    color:dodgerblue;
+}
+
+h1#products {
+    color:dodgerblue;
+}
+
+.featured #products {
+    color:dodgerblue;
+}

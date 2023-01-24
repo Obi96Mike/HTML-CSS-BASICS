@@ -1,0 +1,38 @@
+/*How elements choose a value when none has been explicitly declared in any stylesheet.
+All properties are either inherited or non-inherited properties.
+Inherited properties will take their parent's value in the case no value has been set for the property.
+Non-inherited properties will be set to initial.
+While the default groupings of inherited and non-inherited properties is usually all that is needed, this can be changed by using any of these values for any declaration:
+
+inherit: The value should inherit from its parent, regardless of if it is normally an inherited property or a non-inherited property.
+initial: The value should be set to thhe value defined in the CSS specification; oftentimes different from browser defaults.
+unset: The value should be set to inherit if it is normally an inherited property, otherwise initial. This can be useful for resetting browser defaults from the user agent stylesheet.
+revert: The value should revert back to the next stylesheet in the cascade. For author stylesheets, this would act as if the author did not write any declaration for the property, but it would still honor user agent and user stylesheets as normal.
+
+
+Some CSS properties by default inherit values from their parent thus inheritance makes us write less code.
+strong element is blue even though we did not explicitly set its color.
+border property doesn't get inherited. */
+
+p{
+    color:dodgerblue;
+    border:1px solid black;
+}
+
+/*If you want to stop the inheritance, set the value to initial.
+If you want to force a property to be inherited, put a rule to inherit*/
+strong {
+    color:initial;
+    border: inherit;
+}
+
+main {
+    color:red;
+    border:2px solid black;
+}
+
+button {
+    all:unset;
+    color: inherit;
+    border: revert;
+}  

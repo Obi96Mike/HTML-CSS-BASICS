@@ -36,10 +36,11 @@ Usually prefixed with an asterisk*/
     color: blue;
  }
 
- /*Class selector - selects all of the elements with a specific HTML class attribute. Are prefixed with a dot*/
+ /*Class selector - selects all of the elements with a specific HTML class attribute. Are prefixed with a dot*
+Often a good practice to drop the element type, just in case you change the element name, rules won't break.*/
  .red { 
     color: red;
-}
+ }
 
  /*ID selector - selects an element with a specific HTML ID attribute. Prefixed with # 
  e.g., label tags use ID attribute.*/

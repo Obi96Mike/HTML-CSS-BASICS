@@ -1,0 +1,36 @@
+<!--The algorithm used by the browser to determine which CSS declarations to use when an element is selected by two rulesets with the same property
+    Specificity is roughly calculated by counting the number of each selector type involved in a selector and multiplying by weights.
+    These weights are as follows:
+    Inline styles: 1000
+    ID: 100
+    Classes: 10
+    Pseudo-classes: 10
+    Attributes: 10
+    Elements: 1
+    Pseudo-elements: 1
+
+    If multiple rules target the same element, the browser will apply the rule that is more specific.
+    Each selector has a specificity/ weight.
+
+    Specificity triangle
+    ID selector; #products; We cannot have two elements with the same ID, so the ID selector is very specific. It can only target a specific element
+    Class & attribute selectors; .product; Less specific because we can have multiple elements with the same class or attributes
+    Element selectors; section; because we can have many elements of a given type.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPECIFICITY</title>
+    <link rel="stylesheet" href="/CSS/selectorspecificity.css" />
+  </head>
+  <body>
+    <!--article>h1.highlight-->
+    <article class="featured">
+      <h1 id="products" class="highlight">Heading</h1>
+    </article>
+  </body>
+</html>

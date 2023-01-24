@@ -1,10 +1,11 @@
-/* COMBINATOR / RELATIONAL SELECTORS - combines multiple selectors to select elements based on their location in the DOM; selects elements based on their relationship with other elements.
+/* COMBINATOR / RELATIONAL SELECTORS - combines multiple selectors to select elements based on their location in the DOM; 
+selects elements based on their relationship with other elements.
 
 Advantages
-Cleaner markup because we dont have to assign IDs and classes to various HTML elements
+Cleaner markup because we don't have to assign IDs and classes to various HTML elements
 
 Disadvantages
-Can be fragile because they are depenedent on the location of thes elements in the DOM. If you move elements around, our styles will break.
+Can be fragile because they are dependent on the location of thes elements in the DOM. If you move elements around, our styles will break.
 Not as performant/ fast as basic selectors.
 
 Descendant combinator; represented by a single space in the format selector1 selector2; e.g footer p, select paragraph inside the footer
@@ -35,18 +36,19 @@ h2 + p {
     color: orange
 }
 
-/* Child selector; selects paragraph that is a direct child of products section; only first paragraph is orange*/
+/* Child selector; selects paragraph that is a direct child of products section; only first paragraph is blue*/
 #products > p{
     color:blue
 }
 
-/*Sibling selector; styling all elements that come after the products section*/
+/*Sibling selector; styling all elements that come after the products section or are general siblings of product section.*/
 #products ~ p{
-    color:orange
+    color: turquoise;
 }
 
-/* Adjacent Sibling selector; selects paragraph element that is a direct sibling of section element, it comes immediately after the products section.*/
+/* Adjacent Sibling selector; selects paragraph element that is a direct sibling of section element, 
+it comes immediately after the products section.*/
 #products + p{
-    color:orange
+    color: forestgreen;
 }
 

@@ -2,6 +2,9 @@
 They start with ::
 e.g., p::first-letter would select the first letter of paragraphs
 
+A pseudo-element represents an actual part of the DOM 
+whereas a pseudo-class represents the state of an element based on the user's interaction with it.
+
 .first-letter {
     font-size: 140%;
     font-weight: bold;
@@ -22,6 +25,14 @@ p::first-line {
     background-color: pink;
 }
 
+ul {
+    list-style: none;
+}
+/*Many HTML elements can have content inserted before or after their inner content, handled entirely from CSS code; 
+One can create advanced animations without polluting HTML markup.*/
+li::before {
+    content: "✓";
+}
 /*Used for inserting content before the content of an element. e.g., inserting something before content of every paragraph on our page.
 Block-level element starts on a new line and takes up entire available space. */
 p::before {
