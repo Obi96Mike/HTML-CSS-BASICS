@@ -1,0 +1,18 @@
+/*google COLOR PICKER
+
+Named colors
+RGB values, rgba  
+HSL values
+Hexadecimal values (0-9, A-F); preferred because it's shorter and more compact*/
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    background-color: rgba(230, 205, 16, 0.5); /*last value, alpha between 0 and 1 ; 0 is completely transparent, 1 is completely opaque*/
+    background-color: hsl(53, 65%, 77%);
+    background-color:hsl(53deg 93% 51%);
+    background-color: hsla(53, 65%, 77%, 0.5);
+    background-color: e6cd10; 
+    
+}

@@ -1,0 +1,59 @@
+/*By default, the width and height properties are applied to content box, used to set the size of our elements;
+and any padding or border that we apply will increase the size of the visible box.
+The margin property does not impact size of visible box. It will move box away from other boxes.
+
+Calculating size of an element can get a little complex; that's why we use the box-sizing property.
+Box-sizing property by default is set to content-box which can get a little bit complicated.
+If set to border-box, the size specified by height and width will be applied to the border-box, thus also reducing size of our content area;*/
+
+
+
+/*For you not to add the border-box declaration for every HTML element, use universal selector to target all HTML elements.
+Box-sizing property does not apply to pseudoelements in the DOM*/
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;  
+}
+
+body {
+    margin:10px;
+}
+
+.box-one::before {
+    content: "Hello";
+}
+
+.box-one {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    padding: 20px;
+    border: 10px solid orange;
+    
+}
+
+.box::before {
+    content: "Hello";
+}
+
+
+/*width and height properties are only applied to block-level elements.
+Inline elements e.g., span don't respect width and height properties. 
+If you want to be able to give inline elements width and height, use display property and set it to inline-block.
+For inline elements e.g., span, the display property is set to inline by default.
+For block-level elements e.g., divs, it's set to block.
+
+You have to set display property to inline-block;
+just like block-level elements, we can give the elements a width and height,
+just like inline elements, these elements are not inserted on a new line;
+thus we'll have 2 boxes laid horizontally next to each othe, but the boxes will have a dimension.
+If you want to remove the space between the horizontal boxes, one has to put the span elements next to each other in the HTML code.*/
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    display: inline-block;
+}

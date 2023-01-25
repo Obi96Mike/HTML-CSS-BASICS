@@ -1,0 +1,24 @@
+/*CSS Shapes
+Border property is a shorthand property. It takes its 3 values and applies them to each side.
+
+It takes 3 values
+thickness of the border
+style - solid border, dashed, dotted
+color - hexadecimal, rgb
+
+Order of border properties matter to CSS; border-top, border-width, border-style, border-color.
+Additionally, border-top, border-right, border-bottom, border-left.
+Border radius is used to create rounded corners on an element, regardless of if it has a border defining the radius of the corner, and a value of 50% is often used on square elements to create a circle.
+*/
+
+
+
+.box {
+    width: 600px;
+    height: 200px;
+    background: dodgerblue;
+    border: 10px dashed royalblue;
+    border-top: 20px solid royalblue;
+    border-width: 10px 20px; /*top right bottom left, trbl*/
+    border-radius: 50px; /*making corners round; if you have a square and set border-radius to 100%, you get a full circle*/
+}

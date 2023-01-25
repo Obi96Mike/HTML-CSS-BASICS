@@ -1,0 +1,10 @@
+/*MEASUREMENT UNITS are divided into 2
+1. Absolute units - are always fixed, values dont change; px.
+pt, in, cm, mm are mainly used in printing, have no application in web.
+
+2. Relative units are relative to something else; a unit whose value is dependent on something else.
+%
+vw,vh
+em, rem
+
+*/

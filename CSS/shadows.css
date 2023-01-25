@@ -1,0 +1,17 @@
+/*Add shadows using box-shadow property
+1st value is horizontal distance of shadow to element; +ve value moves shadow to right, -ve value moves shadow to left.
+2nd value is vertical distance of shadow to element; +ve value moves shadow down, -ve value moves shadow down.
+3rd value is for making shadow softer/ blurry.
+4th value is for color*/
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: coral;
+    box-shadow: 0px 0px 30px grey;
+}
+
+h1{
+    color:white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
