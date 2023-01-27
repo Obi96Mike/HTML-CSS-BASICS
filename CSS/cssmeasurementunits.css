@@ -1,10 +1,79 @@
+html {
+    /*62.5% of 16px = 10px*/
+    font-size: 62.5%;
+}
+
 /*MEASUREMENT UNITS are divided into 2
-1. Absolute units - are always fixed, values dont change; px.
+1. Absolute units - are always fixed, values dont change; e.g., px.
 pt, in, cm, mm are mainly used in printing, have no application in web.
 
 2. Relative units are relative to something else; a unit whose value is dependent on something else.
-%
-vw,vh
-em, rem
-
+One can create more scalable layouts with relative units; can adjust to different screen sizes.
+%; relative to the size of the parent element/container/value; e.g., a width of 50% would be half the size of the parent element's width.
+vw,vh; relative to the size(width/ height) of viewport; e.g., 50vw would be half of the width of the viewport.
+em, rem; relative to font size, root element font size .
+ch is the number of characters on a line, based on the size of the "0" character in the element's font. This can be useful to prevent paragraphs from spanning more than ~70 characters in width, which can become hard to read.
 */
+
+/*Size of the box is always the same no matter how big the screen is;
+verify by resizing browser window.
+pixel value maintains size of box, border on different screen sizes*/
+
+/*Body is block-level element; and by default the width of the block-level elements is 100%;
+that is why they stretch to take up the entire available horizontal space.*/
+
+/*body{
+    margin: 10px;
+    width: 300px;
+}*/
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    border-top: 3px solid orange;
+}
+
+
+
+.box-one {
+    width: 50%; /*50% of the width of the parent element; here the parent element is the body element; 
+    150px will be the width of box element if the body element has a width of 300px.
+    If not set; it's usually at
+    Our box gets resized if you resize the browser window */
+    height: 100px; 
+    background-color: gold;
+    border-top: 3px solid orange;
+}
+
+/* USE OF VIEWPORT units allows us to size our elements according to the width or height of the viewport;
+By default, the width of block-level elements is 100% and the height is 0.
+Use of vh allows the box to take up the entire available vertical space.
+
+.box {
+    width: 50vw; 50% of the width of the viewport
+    height: 100vh; 100% of the height of the viewport
+    background-color: gold;
+    border-top: 3px solid orange;
+}*/
+
+
+/* USE OF em and rem when you want to adjust the layout according to the font size.
+e.g., If the font becomes bigger, you want the width to increase as well.
+If the box element lacks a font size, it's going to inherit font size property from its parent element which is the body element.
+The body element lacks a font-size property so it's going to inherit font-size property of HTML element which is 16px.
+Problem with em unit is that if you don't have an explicit font size on the element, you have to trace up the inheritance hierarchy to figure out what font size will be applied to this element.
+Sometimes, it can get complicated, that's why we have rem
+
+rem; font size of root element by default is 16px.
+If you set the width to 15rem, that means 15 * 16 which the calculation is going to be complex.
+Thus a cool trick is to define a rule for the HTML element then set its font size to 62.5% which is 62.5% * 16px = 10px;
+So whenever we see a value like 15rem, we assume it is 150px.
+
+.box {
+    width: 10em; means 10x the font size of the current element; 10 * 16px = 160px.
+    width: 10rem; means 10x the font size of the root element; 10 * 16px = 160px.
+    height: 100vh; 100% of the height of the viewport
+    background-color: gold;
+    border-top: 3px solid orange;
+}*/

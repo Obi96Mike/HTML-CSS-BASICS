@@ -11,9 +11,10 @@ Border is used to create a border around content and padding of elements;
 it is a line that goes around the content and the padding; 
 it can be used to separate elements from ech other or to add visual interest.
 
-Margin is space outside of the border used to create extra space around an element;
+Margin is space outside of the border used to create extra space around an element; 
+margin is used to space elements.
 (adding/ creating some space in between different elements and to keep them from overlapping).
-Most browsers use 16px for top and bottom margins; margin is used to space elements.
+Most browsers use 16px for top and bottom margins; 
 A value of auto can also be used to allow the browser to choose margins, which will usually center block elements horizontally.
 Adjacent horizontal margins will be added together to determine the space between elements. 
 Vertical margins wull be collapsed, meaning only the larger margin value will be used.
