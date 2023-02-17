@@ -1,11 +1,59 @@
-<!--Forms and input controls-->
-<form action="">
+<!--Forms and input controls
+We log into sites through forms, we buy things through forms, request a search, add content to a site.-->
+<h1>Our Form</h1>
+<form action="received.html" method="get">
   <!--An HTML tag for a section of interactive inputs, used for submitting information to the server. They contain a variety of label-input pairs and a submit button-->
   <label for="username">Username:</label>
   <input type="text" id="username" name="username" />
 
+  <!--A placeholder is a temporary suggestion of form, while a value is an estimate of the correct response.
+  The value attribute fills the field with a value that will be submitted with the form. The placeholder shows a suggestion, but doesn't really enter it.-->
+  <label for="email">Email:</label>
+  <input
+    type="email"
+    id="email"
+    name="email"
+    value="me@example.com"
+    placeholder="me@example.com"
+  />
+
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" />
+
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" />
+
+  <label for="textarea">Text Area:</label>
+  <textarea id="textarea" name="textarea" cols="30" rows="15"></textarea>
+
+  <label for="date">Date:</label>
+  <input type="date" id="date" name="date" />
+
+  <label for="color">Color:</label>
+  <input type="color" id="color" name="color" />
+
   <label for="password">Password:</label>
   <input type="password" id="password" name="password" />
+
+  <label for="file">File:</label>
+  <input type="file" id="file" name="file" accept="image/*" multiple="true" />
+
+  <label for="checkbox">Checkbox:</label>
+  <input
+    type="checkbox"
+    id="checkbox"
+    name="simplecheckbox"
+    value="The checkbox is checked"
+    type="checkbox"
+    checked
+  />
+
+  <label for="selectlist">Choose one:</label>
+  <select id="selectlist" name="selectlist" multiple="true">
+    <option value="">First Option</option>
+    <option value="">Second Choice</option>
+    <option value="">Third Thing</option>
+  </select>
 
   <button>Submit</button>
   <!--A way to allow a user to submit the form-->

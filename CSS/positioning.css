@@ -1,0 +1,72 @@
+/*Position property for setting how the browser should position an element in the document. 
+It defaults to static, but can take a variety of values.
+
+static: Default value, the element follows the flow of the document.
+
+fixed: The element is positioned relative to the viewport and removed from the normal flow of the document.
+With fixed positioning, we can move an element relative the viewport. 
+The top, left, right, botom properties can then be used to move the element.
+
+relative: With relative positioning, we can move an element relative to element's normal position.
+
+absolute: 
+With absolute positioning, we can position an element relative to the parent/container; and for this to happen, the container must be positioned relatively.
+When we absolutely position an element, that element is removed from the normal flow of the page and all the other elements are rendered as if the absolutely positioned element doesn't exist.
+
+
+sticky:
+
+*/
+
+.boxes {
+    border: 3px solid lightgrey; 
+    position: relative;
+}
+
+.box {
+    width: 5rem;
+    height: 5rem;
+}
+
+.box-one {
+    background-color: gold;
+}
+
+/* 
+RELATIVE POSITIONING
+.box-two {
+    background-color: tomato;
+    position: relative;
+    left: 4rem;
+    bottom: 4rem;
+    z-index: -1; 
+    /*z-index property moves this element along the z-axis.
+    Overlapping of the yellow and tomato elements can be changed using z-index property.
+    On webpages, we have 3 axes; horizontal/ x-axis, vertical/ y-axis and z-axis representing depth.
+    A positive value moves elements closer to us. The higher the positive value, the higher that element will move up z-axis.
+    A negative value moves elements away from us.
+} */
+
+/* ABSOLUTE POSITIONING
+.box-two {
+    background-color: tomato;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+}
+/*Orange box is positioned relative to its container, the bottom right of the container.
+On absolute positioning of the orange box, the blue box moved up.
+When we absolutely position an element, that element is removed from the normal flow of the page, which means from the parent's point of view, that element doesn't exist.
+*/
+
+.box-two {
+    background-color: tomato;
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+}
+
+.box-three {
+    background-color: dodgerblue;
+}

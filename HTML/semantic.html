@@ -1,6 +1,6 @@
-<!--Generic/ General purpose containers - div and span elements used for styling purposes.
-    Block-level elements start on a new line and fill up the entire available horizontal space, but you can use CSS to change its width
-    vs Inline elements e.g., span element for styling texts, not going to take up entire width of the page. -->
+<!--Generic/ General purpose containers/ elements - div and span elements used for styling purposes.
+    Block-level elements start on a new line and fill up the entire available horizontal space, but you can use CSS to change its width; e.g., blockquote, p, ul
+    vs Inline elements e.g., span element for styling texts, not going to take up entire width of the page. Others include; strong, b, i, em, q. -->
     <!DOCTYPE html>
     <html lang="en">
       <head>
@@ -38,13 +38,13 @@
     helping search engines better understand our pages and what they contain.-->
 
 <header></header>
-<!--Introductory content which can belong to page, section or article-->
+<!--Introductory content which can belong to page, section or article; used to mark places on the page where the content is the header.-->
 
 <article></article>
-<!--Self-contained, independently distributable content e.g., forum posts, user-submitted comments, reviews, product cards-->
+<!--Self-contained, independently distributable content e.g., forum posts, user-submitted comments, reviews, product cards; wraps around any instance of an article.-->
 
 <section></section>
-<!---Thematic groupings of content, not self-contained; to group related content-->
+<!---Thematic groupings of content, not self-contained; to group related content; wraps around sections of content.-->
 
 <!--A figure element is a container for figures, it does not have any visual characteristics.
     figcaption element, optional, can be above or below the image-->
@@ -69,13 +69,13 @@
 <p>Published <time datetime="2021-01-01 17:00">January 1 2021 05:00pm</time></p>
 
 <main></main>
-<!--Main content, limited to one per page; every page can only have only 1 main element-->
+<!--Main content, limited to one per page; every page can only have only 1 main element; wraps around main content of the page.-->
 
 <nav></nav>
 <!--Asection of links, oftentimes the primary navia=gation of the page-->
 
 <aside></aside>
-<!--Non-vital content indirectly related to the main content. The page would make sense without this content-->
+<!--Non-vital content indirectly related to the main content. The page would make sense without this content; marks content that is off to the side or not the main attraction.-->
 
 <footer></footer>
 <!--Footer of the document, oftentimes containing copyright information-->
@@ -123,3 +123,9 @@
 </footer>
 </body>
 </html>
+
+<!--Document Object Model(DOM) Tree
+The hierarchy and structure of HTML elements, often used for targeting elements in CSS and JavaScript
+HTML
+HEAD - title
+BODY - h1, div, p-->

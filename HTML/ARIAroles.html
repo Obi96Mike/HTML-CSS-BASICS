@@ -1,0 +1,19 @@
+<!--HTML attributes that provide accessible information about a specific element. Used any time the existing markup makes things confusing in the accessibility tree.
+    Another kind of attribute that can be added to any HTML element to give it more meaning and to make sure the browser understands what something is.
+    Ideally, we won't need an ARIA Role. If we use a proper HTML element we'll communicate the right message about the semantics of the content. But sometimes things are not ideal.
+Accessibility tree-->
+<h1 aria-label="Hello World">
+  <div class="grid" aria-hidden="true">
+    <span>H</span>
+    <span>e</span>
+    <span>l</span>
+    <span>l</span>
+    <span>o</span>
+
+    <span>w</span>
+    <span>o</span>
+    <span>r</span>
+    <span>l</span>
+    <span>d</span>
+  </div>
+</h1>

@@ -1,8 +1,11 @@
-<!--DOCTYPE Declaration - Press ! then TAB to get DOCTYPE HTML
-    Head section gives browsers and search engines information about a webpage
-    Head section contains metadata about the HTML document-->
+<!--DOCTYPE Declaration declares which era the HTML file is from.
+    Press ! then TAB to get DOCTYPE HTML
+    Head section/ element gives browsers and search engines information about a webpage; contains information the browser needs to know, though it won't be displayed on the page.
+    Head section contains metadata about the HTML document
+    Body element contains the information and content that will be displayed on the page.-->
 
-<html lang="en">
+<!--lang attribute is a universal attribute- Language, script, alphabet-->
+<html lang="en-US / en-GB / es-mx" dir="ltr">
   <head>
     <!--meta elements give information about a webpage-->
     <meta charset="UTF-8" />
@@ -13,18 +16,21 @@
     <title>HEAD SECTION</title>
     <link rel="stylesheet" href="" />
     <!--LINKING TO HTML in head section of .html-->
-    <!--<link>; a self-closing HTML tag for linking to external resources, usually CSS style sheets. 
-        It takes 2 attributes; rel which is the relationship to the other document and for CSS, 
+    <!--<link>; a self-closing HTML tag for linking to external resources, usually CSS style sheets; link element links to a range of other assets we want to load like CSS files, favicons, fonts.
+        It takes 2 attributes; 
+        rel attribute which is the relationship to the other document and for CSS; it tells browsers which kind of asset it is.
         this should be a stylesheet; 
-        href which is the path to the linked file, either relative or absolute.-->
+        href attribute which is the path to the linked file, either relative or absolute; it provides the URL to the asset.
+        script element tells the browser to load a JavaScript file.
+    -->
   </head>
 </html>
 
-<!--Meta element for defining character set. 
+<!--Meta element for defining character set. charset attribute defines the alphabe or set of characters for the script language.
     Character  set - Computers dont understand characters like A, B, C. They only understand numbers which are represented in the binary format, 0s and 1s.
     Using a character set, we can map a character to a numeric value.
-    ASCII character set which represents characters in the English language hence limited.
-    UTF-8 represents almost all characters in the world; most commonly used-->
+    ASCII character set which represents characters in the English language hence limited; an encoding standard limited to 128 characters, focused on the needs of certain European languages.
+    UTF-8 represents almost all characters in the world; most commonly used; Unicode is a universal encoding standard for characters encompassing many languages.-->
 
 <!--Meta element for configuring viewport; visible area of a webpage
     Defining the initial width and zoom factor for the viewport.

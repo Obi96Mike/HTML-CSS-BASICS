@@ -4,16 +4,41 @@ html {
 }
 
 /*MEASUREMENT UNITS are divided into 2
+What unit you use depends on the problem you are trying to solve.
 1. Absolute units - are always fixed, values dont change; e.g., px.
 pt, in, cm, mm are mainly used in printing, have no application in web.
+pixels don't scale as the items around them scale, or if the user stylesheets has larger sizes on it.
 
 2. Relative units are relative to something else; a unit whose value is dependent on something else.
 One can create more scalable layouts with relative units; can adjust to different screen sizes.
 %; relative to the size of the parent element/container/value; e.g., a width of 50% would be half the size of the parent element's width.
-vw,vh; relative to the size(width/ height) of viewport; e.g., 50vw would be half of the width of the viewport.
-em, rem; relative to font size, root element font size .
-ch is the number of characters on a line, based on the size of the "0" character in the element's font. This can be useful to prevent paragraphs from spanning more than ~70 characters in width, which can become hard to read.
-*/
+vw,vh; relative to the size(width/ height) of the viewport; e.g., 50vw would be half of the width of the viewport.
+em, rem; relative to font size, relative to root element font size which is the HTML tag.
+
+ch unit is the number of characters on a line, 
+It is relative to the width of the "0" character in the current element's font; which essentially allows us to make widths based on the number of characters in the paragragh.
+This can be useful to prevent paragraphs from spanning more than ~70 characters in width, which can become hard to read.
+
+WIDTH AND HEIGHT
+Often % unit used - % to be relative to parent
+vw/vh to be relative to viewport
+ch for paragraph widths
+rem for closer to absolute values.
+px as a last resort for true absolutes.
+
+MARGIN AND PADDING
+rem for closer to absolute values
+em to scale with font size
+px for small values e.g., 10px padding, last resort.
+
+BORDERS, SHADOWS
+px for small values
+rem/em okay here too; scaling doesn't always look great.
+
+FONT SIZE
+rem usually best
+em to scale to parent size
+px as a last resort
 
 /*Size of the box is always the same no matter how big the screen is;
 verify by resizing browser window.
@@ -40,7 +65,7 @@ that is why they stretch to take up the entire available horizontal space.*/
     width: 50%; /*50% of the width of the parent element; here the parent element is the body element; 
     150px will be the width of box element if the body element has a width of 300px.
     If not set; it's usually at
-    Our box gets resized if you resize the browser window */
+    Our box gets resized if you resize the browser window*/
     height: 100px; 
     background-color: gold;
     border-top: 3px solid orange;
@@ -76,4 +101,9 @@ So whenever we see a value like 15rem, we assume it is 150px.
     height: 100vh; 100% of the height of the viewport
     background-color: gold;
     border-top: 3px solid orange;
-}*/
+}
+
+What unit you use depends on the problem you are trying to solve.
+We used px to have a fixed size border.
+we used vh so our box takes entire available space vertically.
+We used rem so width of the box adjusts based on default font-size*/

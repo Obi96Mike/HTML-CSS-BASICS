@@ -1,5 +1,29 @@
 <!--unsplash.com, sketch.com, pexels.com to download images and videos
   caniuse.com to check which browsers support various HTML and CSS features.-->
+
+<!--IMAGES
+  GIF   
+Does well compressing large areas of a single color
+Limited color space of 256 colors
+Can do transparency, with jagged edges.
+Can have multiple frames, and make a little movie.
+
+  SVG
+Logos, icons, 
+Vector file
+
+  JPG
+Image format for compressing photos
+Can be compressed.
+Size vs Quality
+
+  PNG
+Images that need transparency
+Good at compression
+Photos and images
+Depends on the use case
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,11 +49,67 @@
     <!--img tag is an empty tag with 2 primary attributes
       src: The path to the image, either relative or absolute
       alt: Alternative text to be used with screen readers for visually impaired people or any time the image cannot be displayed.
-      Embedding images at different devices depending on device.-->
+      Height, width : this let the browser know how much space the image needs before the file is fetched, improving performance.
+      srcset: allows you to specify multiple files to be used based on either viewport width or image pixel width; it lets the browser choose from options that fit the specific situation, minimizing bandwidth consumption while producing attrative results. The w specification instead of the x is used to consider both the display density and window width when choosing image source.
+      sizes: lists which size image to use at which media query.
+    To change from a resolution -based srcset to a width-based srcset, provide pixel measurements (w) instead of 1x, 2x.-->
     <img src="/images/obimike.png" alt="Obi Mike picture" />
+
+    <!--picture element gives one flexibility you need to change content as well as image size; used to create an image that changes content depending on the surrounding layout.
+    It is convenient to use the picture element when aspect ratios and cropping chane from one source to another.-->
+    <picture>
+      <source
+        media="(min-width:600px)"
+        srcset="
+          /images/obimike.png  320w,
+          /images/obimike.png  480w,
+          /images/obimike.png  720w,
+          /images/obimike.png  920w,
+          /images/obimike.png 1440w,
+          /images/obimike.png 1920w
+        "
+      />
+      <source srcset="/images/obimike.png" />
+      <img
+        src="/images/obimike.png"
+        alt="A picture of Obi"
+        width="480"
+        height="360"
+      />
+    </picture>
+
+    <!--figure for anything that appears as a figure, illustrating something.
+      figcaption element for demonstration of a concept which needs a caption.-->
+    <figure>
+      <img src="" alt="" />
+      <figcaption></figcaption>
+    </figure>
+
+    <!--video element; 
+    h.264 codec has the widest support across browsers; widely used, not open source, fees to use.
+    WebM 
+    AV1
+
+    adaptive bitrate streaming in Netflix, HBO, Hulu; the reason why we use external video services to host videos
+    captions and subtitles - use track element and point it to a text file. One can add chapter divisions to vidoes by referencing a VTT file listing chapters.
+    Embedding other media through iframes; making it easier to combine content from other sources into your pages and apps.
+  -->
     <video controls autoplay loop src="/videos/ocean.mp4">
+      <source src="" type="" />
+      <track
+        src=""
+        kind="captions/ subtitles/ descriptions/ chapters"
+        label="english"
+        srclang="en"
+        default
+      />
       Your browser doesn't support videos.
     </video>
-    <audio src=""></audio>
+
+    <!--FILE FORMATS - mp3, ogg-->
+    <audio controls src="" loop autoplay>
+      <source src="" type="" />
+      Sorry your browser doesn't support this.
+    </audio>
   </body>
 </html>
