@@ -3,13 +3,29 @@ html {
     font-size: 62.5%;
 }
 
-/*MEASUREMENT UNITS are divided into 2
+/*CSS VALUES AND UNITS
+color: red;
+color: rgb(255, 0, 0)
+font-size: 10px;
+font-size: 1rem;
+
+NUMERIC VALUES
+width: 80%
+height: 10em;
+border-width: 5px;
+animation-iteration-count: 5;*/
+
+/*length data type is used to specify sizing with 2 types of units: absolute and relative <length> units.
+MEASUREMENT UNITS are divided into 2
 What unit you use depends on the problem you are trying to solve.
 1. Absolute units - are always fixed, values dont change; e.g., px.
+fixed unit, always the same size.
+Not affected by values in related elements.
 pt, in, cm, mm are mainly used in printing, have no application in web.
 pixels don't scale as the items around them scale, or if the user stylesheets has larger sizes on it.
 
-2. Relative units are relative to something else; a unit whose value is dependent on something else.
+2. Relative units are relative to something else; a unit whose value is dependent on something else; relational sizing, not fixed.
+Dependent upon values declared in parent and ancestor elements.
 One can create more scalable layouts with relative units; can adjust to different screen sizes.
 %; relative to the size of the parent element/container/value; e.g., a width of 50% would be half the size of the parent element's width.
 vw,vh; relative to the size(width/ height) of the viewport; e.g., 50vw would be half of the width of the viewport.
@@ -46,6 +62,37 @@ pixel value maintains size of box, border on different screen sizes*/
 
 /*Body is block-level element; and by default the width of the block-level elements is 100%;
 that is why they stretch to take up the entire available horizontal space.*/
+
+
+/*UNITLESS VALUES
+Some numeric values do not require a unit.
+line-height: 1.25;
+margin" 0px 2px;
+margin: 0 2px;
+
+Keywords do not require a unit.
+color: red;
+font-size: medium;
+font-weight: bold;
+
+CSS FUNCTION VALUES
+The syntax aleays includes the function name and parenthesis
+
+Rotate an element
+transform: rotate(90deg);
+
+Calculate a computed value
+width: calc(80% - 20px);
+
+Embed an image to the background of an element
+background-image: url('myimage.png');
+
+INITIAL VALUE; default browser styles; usually in user agent stylesheets
+h1 {
+font-weight: bold;
+}
+*/
+
 
 /*body{
     margin: 10px;
