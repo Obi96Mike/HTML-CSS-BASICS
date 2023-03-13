@@ -21,7 +21,7 @@ What unit you use depends on the problem you are trying to solve.
 1. Absolute units - are always fixed, values dont change; e.g., px.
 fixed unit, always the same size.
 Not affected by values in related elements.
-pt, in, cm, mm are mainly used in printing, have no application in web.
+pc, pt, in, cm, mm are mainly used in printing, have no application in web.
 pixels don't scale as the items around them scale, or if the user stylesheets has larger sizes on it.
 
 2. Relative units are relative to something else; a unit whose value is dependent on something else; relational sizing, not fixed.
@@ -35,16 +35,18 @@ ch unit is the number of characters on a line,
 It is relative to the width of the "0" character in the current element's font; which essentially allows us to make widths based on the number of characters in the paragragh.
 This can be useful to prevent paragraphs from spanning more than ~70 characters in width, which can become hard to read.
 
-WIDTH AND HEIGHT
+
+WIDTH AND HEIGHT properties change the size of the content box. Inline elements require the display property.
 Often % unit used - % to be relative to parent
 vw/vh to be relative to viewport
 ch for paragraph widths
 rem for closer to absolute values.
 px as a last resort for true absolutes.
+vmin and vmax: equal to the smaller/ larger of vw and vh.
 
 MARGIN AND PADDING
-rem for closer to absolute values
-em to scale with font size
+rem for closer to absolute values; represents font-size of root element
+em to scale with font size; represents inherited font-size of element
 px for small values e.g., 10px padding, last resort.
 
 BORDERS, SHADOWS

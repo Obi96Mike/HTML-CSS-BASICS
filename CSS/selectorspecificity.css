@@ -1,5 +1,7 @@
 
-/*We can have many h1 elements but not all h1 elements may have a class of highlight.
+/*INHERITANCE AND SPECIFICITY
+Specificity determines how browsers decide which CSS rules take  precedence; universal, type, class, id.
+We can have many h1 elements but not all h1 elements may have a class of highlight.
 Thus class selector is more specific
 Incase of 2 selectors with equal specificity, the rule that comes last will be applied.
 

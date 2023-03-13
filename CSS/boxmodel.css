@@ -1,13 +1,31 @@
-/*Use Chrom Dev tools
+/*cssreset.com
+Use Chrom Dev tools
 Box model is a box surrounding all elements on the document used for layout. 
 From inside to out, it consists of content, padding, border and margin.
+BOX PROPERTIES : width, height, padding, border, margin.
 
 Content is the actual content of the element, such as text, images, or other media.
 
-Padding is used to create extra space within an element, between content and border 
-(adding some pace outside content area).
+WIDTH AND HEIGHT properties change the size of the content box of block ele. Inline elements require the display property.
 
-Border is used to create a border around content and padding of elements; 
+PADDING is used to create extra space within an element, between content and border; adds/ removes space inside of the element but around content box.
+(adding some space outside content area). All values must be a positive number.
+padding-top
+padding-right
+padding-bottom
+padding-left: 2px;
+
+padding: 2px 2px 2px 2px;
+padding: 2px; same on all sides
+padding: 2px 10px; top & bottom, right & left
+padding: 10px 2%; mix different types of length units.
+padding: 2px 10px 5px; top, right & left, bottom
+
+
+Border is used to create a border around content and padding of elements; border-width, style and color;
+border-width: 10px/ thin/ medium/ thick; 
+border-color: blue/ #000000;
+border-style: none/ medium/ dashed/ ridge;
 it is a line that goes around the content and the padding; 
 it can be used to separate elements from ech other or to add visual interest.
 
@@ -31,8 +49,10 @@ p {
 }*/
 
 /*Margin collapsing; if we have 2 elements next to each other horizontally, their margins get collapsed into a single margin.
-Margin property should be used to separate elements; (the minimum space between 'me' and other elements) 
-while the padding property to add space between border and content area of an element.*/
+Margin property should be used to separate elements/ adds/removes space around he element; (the minimum space between 'me' and other elements) 
+while the padding property to add space between border and content area of an element.
+Can be used with the keyword auto and with negative values.*/ 
+
 /*Two paragraphs*/   
 
  p {

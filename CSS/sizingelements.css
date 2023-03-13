@@ -38,6 +38,10 @@ body {
     content: "Hello";
 }
 
+/*Inline elements takes up the same space as their content; elements are displayed in a line from the left; elements will only wrap when items cannot fit; e.g., <a>, <span>, <strong>.
+Block elements are same height as content, same width as container; always start on a new line; e.g., <p>, <h1>, <article>, <section>.
+Display property used to change default behaviour of inline and block-level elements.*/
+
 
 /*width and height properties are only applied to block-level elements.
 Inline elements e.g., span don't respect width and height properties. 

@@ -36,13 +36,18 @@ Usually prefixed with an asterisk*/
     color: blue;
  }
 
+/*NAMING CONVENTIONS
+Instead of spaces, use a hyphen or underscore; class-name, class_name*/
+
  /*Class selector - selects all of the elements with a specific HTML class attribute. Are prefixed with a dot*
+ Reusable, can be applied to any element, selector only matches to name.
 Often a good practice to drop the element type, just in case you change the element name, rules won't break.*/
  .red { 
     color: red;
  }
 
  /*ID selector - selects an element with a specific HTML ID attribute. Prefixed with # 
+ Can only be used once.
  e.g., label tags use ID attribute.*/
 #bar {
     color:blue;
